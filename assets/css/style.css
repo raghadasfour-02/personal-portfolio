@@ -1,21 +1,3 @@
-
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
     /**
@@ -26,18 +8,18 @@
   
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
-      hsl(240, 1%, 25%) 3%, 
-      hsl(0, 0%, 19%) 97%
+      #0d192e, 
+      #0d192e
     );
     --bg-gradient-jet: linear-gradient(
       to bottom right, 
-      hsla(240, 1%, 18%, 0.251) 0%, 
-      hsla(240, 2%, 11%, 0) 100%
-    ), hsl(240, 2%, 13%);
+      #0d192e, 
+      #0d192e
+    ), #0d192e;
     --bg-gradient-yellow-1: linear-gradient(
       to bottom right, 
-      hsl(45, 100%, 71%) 0%, 
-      hsla(36, 100%, 69%, 0) 50%
+      #64ffda,
+      #398f7b
     );
     --bg-gradient-yellow-2: linear-gradient(
       135deg, 
@@ -51,23 +33,23 @@
     );
     --text-gradient-yellow: linear-gradient(
       to right, 
-      hsl(45, 100%, 72%), 
-      hsl(35, 100%, 68%)
+      #64ffda,
+      #4cbba1
     );
   
     /* solid */
   
-    --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black-1: hsl(240, 2%, 13%);
-    --eerie-black-2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
+    --jet: #272d39;
+    --onyx: #272d39;
+    --eerie-black-1: #0d192e;
+    --eerie-black-2: #0d192e;
+    --smoky-black: #09152a;
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(45, 100%, 72%);
-    --vegas-gold: hsl(45, 54%, 58%);
+    --orange-yellow-crayola: #4cbba1;
+    --vegas-gold: #4cbba1;
     --light-gray: hsl(0, 0%, 84%);
-    --light-gray-70: hsla(0, 0%, 84%, 0.7);
+    --light-gray-70: #696c72;
     --bittersweet-shimmer: hsl(0, 43%, 51%);
   
     /**
@@ -460,7 +442,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: hsla(240, 1%, 17%, 0.75);
+    background: #12233f;
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
     border-radius: 12px 12px 0 0;
