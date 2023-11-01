@@ -6,11 +6,11 @@
   
     /* gradient */
   
-    /* FOR IMAGE */
+    /* FOR AVATAR IMAGE */
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
-      #0d192e, 
-      #7d8faf
+      #091120, 
+      #101f3a
     );
     --bg-gradient-jet: linear-gradient(
       to bottom right, 
