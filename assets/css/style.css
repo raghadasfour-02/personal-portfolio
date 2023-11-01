@@ -6,16 +6,17 @@
   
     /* gradient */
   
+    /* FOR IMAGE */
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
       #0d192e, 
-      #0d192e
+      #7d8faf
     );
     --bg-gradient-jet: linear-gradient(
       to bottom right, 
       #0d192e, 
-      #0d192e
-    ), #0d192e;
+      #101f3a
+    ), #101f3a;
     --bg-gradient-yellow-1: linear-gradient(
       to bottom right, 
       #64ffda,
@@ -34,7 +35,7 @@
     --text-gradient-yellow: linear-gradient(
       to right, 
       #64ffda,
-      #4cbba1
+      #398f7b
     );
   
     /* solid */
