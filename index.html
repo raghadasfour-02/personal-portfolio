@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:raghad.asfour@uwaterloo.ca" class="contact-link">raghad.asfour@uwaterloo.ca</a>
+              <a href="mailto:raghad.asfour@uwaterloo.ca" class="contact-link">r2asfour@uwaterloo.ca</a>
             </div>
 
           </li>
@@ -164,6 +164,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Extracurriculars</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
@@ -218,7 +222,7 @@
                 " alt="design icon" width="40">
               </div>
 
-              <div class="service-content-box">
+              <div onclick="location.href='https://github.com/raghadasfour-02/ResumeParser';" style="cursor: pointer;" class="service-content-box">
                 <h4 class="h4 service-item-title">Resume Parser</h4>
 
                 <p class="service-item-text">
@@ -234,7 +238,7 @@
                 <img src="./assets/images/news.png" alt="Web development icon" width="40">
               </div>
 
-              <div class="service-content-box">
+              <div onclick="location.href='https://github.com/raghadasfour-02/news_aggregator';" style="cursor: pointer;" class="service-content-box">
                 <h4 class="h4 service-item-title">News Aggregator</h4>
 
                 <p class="service-item-text">
@@ -250,7 +254,7 @@
                 <img src="./assets/images/envelope.png" alt="mobile app icon" width="40">
               </div>
 
-              <div class="service-content-box">
+              <div onclick="location.href='https://github.com/raghadasfour-02/email-unsubscriber';" style="cursor: pointer;" class="service-content-box">
                 <h4 class="h4 service-item-title">Bulk Unsubscribe</h4>
 
                 <p class="service-item-text">
@@ -266,7 +270,7 @@
                 <img src="./assets/images/keyboard.png" alt="camera icon" width="40">
               </div>
 
-              <div class="service-content-box">
+              <div onclick="location.href='https://github.com/raghadasfour-02/binary-keyboard';" style="cursor: pointer;" class="service-content-box">
                 <h4 class="h4 service-item-title">A Binary Keyboard</h4>
 
                 <p class="service-item-text">
@@ -434,10 +438,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="extracurriculars" data-page="extracurriculars">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Extracurriculars</h2>
         </header>
 
         <section class="projects">
@@ -446,14 +450,6 @@
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Software</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Book Reviews</button>
             </li>
 
           </ul>
@@ -476,19 +472,13 @@
                 <button data-select-item>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Software</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Book Reviews</button>
-              </li>
-
             </ul>
 
           </div>
 
-          <ul class="project-list">
+          <h3 class="project-title">This page is under construction. Come back soon :) </h3>
+
+          <!-- <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
@@ -498,35 +488,18 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/news.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">TDD</h3>
+                <h3 class="project-title">Notes from Underground</h3>
 
-                <p class="project-category">What I learned from Kent Beck's TDD Book</p>
+                <p class="project-category">Fyodor Dostoevsky</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Debugging</h3>
-
-                <p class="project-category">How I tackled a tough bug at work</p>
-
-              </a>
-            </li>
-
-          </ul>
+          </ul> -->
 
         </section>
 
@@ -553,24 +526,20 @@
             <li class="blog-post-item">
               <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Software</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov 23, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Test Driven Developement: an intern's perspective</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    What I learned from Kent Beck's TDD.
                   </p>
 
                 </div>
@@ -581,144 +550,26 @@
             <li class="blog-post-item">
               <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Software</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Jan 15, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Debugging Diaries: Byte-ing Back Bugs</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    How I tackled a tough bug at work. 
                   </p>
 
                 </div>
 
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
 
         </section>
 
