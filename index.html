@@ -7,30 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raghad Asfour</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
   <main>
 
     <!--
@@ -161,9 +145,9 @@
             <button class="navbar-link" data-nav-link>Extracurriculars</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -227,19 +211,15 @@
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/news.png" alt="Web development icon" width="40">
               </div>
-
               <div onclick="location.href='https://github.com/raghadasfour-02/news_aggregator';" style="cursor: pointer;" class="service-content-box">
                 <h4 class="h4 service-item-title">News Aggregator</h4>
-
                 <p class="service-item-text">
                   A web app designed to curate news articles and inform you of existing bias in articles you read.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
@@ -336,8 +316,9 @@
               <span>Sep 2020 — Apr 2025</span>
 
               <p class="timeline-text">
-                Systems Design Engineering
+                Systems Design Engineering     
               </p>
+                
 
             </li>
 
@@ -370,6 +351,18 @@
 
           <ol class="timeline-list">
 
+            <li class="timeline-item"></li>
+
+              <h4 class="h4 timeline-item-title">Software Engineer @ Arctic Wolf Networks</h4>
+
+              <span>May 2024 — Aug 2024</span>
+
+              <p class="timeline-text">
+                Skills: Golang, Typescript, Python, Django, AWS, Docker
+              </p> <br>
+
+            </li>
+
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Software Engineer @ ecobee</h4>
@@ -389,7 +382,7 @@
               <span>Jan 2023 — Apr 2023</span>
 
               <p class="timeline-text">
-                Skills: Python, Java, Golang, GCP, BigQuery, MySQL
+                Skills: Golang, Python, Java, GCP, BigQuery, MySQL
               </p>
 
             </li>
@@ -418,6 +411,18 @@
 
             </li>
 
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer @ Netact Services Inc.</h4>
+
+              <span>Sep 2021 — Dec 2021</span>
+
+              <p class="timeline-text">
+                Skills: React.js, Javascript
+              </p>
+
+            </li>
+
           </ol>
 
         </section>
@@ -427,79 +432,70 @@
 
 
 
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="extracurriculars" data-page="extracurriculars">
+      <article class="extracurriculars" data-page="extracurriculars" id="extracurriculars">
 
         <header>
-          <h2 class="h2 article-title">Extracurriculars</h2>
+          <h2 class="h2 article-title">Fun stuff I've done</h2>
         </header>
-
+        <section class="about-text">
+          <p>A keepsake for fun things I've done + places I've been. Written like a journal.</p>
+        </section>
+        
         <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-          </ul>
-
           <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
+            <button class="filter-select" data-select></button>
             <ul class="select-list">
-
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
             </ul>
-
           </div>
-
-          <h3 class="project-title">This page is under construction. Come back soon :) </h3>
-
-          <!-- <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/news.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Notes from Underground</h3>
-
-                <p class="project-category">Fyodor Dostoevsky</p>
-
-              </a>
+      
+          <ul class="service-list">
+            <!-- Existing items -->
+            <li class="service-item">
+              <div onclick="location.href='engplay.html';" style="cursor: pointer;" class="service-content-box">
+                <h4 class="h4 service-item-title">EngPlay</h4>
+                <p class="service-item-text">
+                  A production directed and performed by engineering students at the University of Waterloo.
+                </p>
+              </div>
             </li>
-
-
-          </ul> -->
-
+      
+            <li class="service-item">
+              <div onclick="location.href='https://github.com/raghadasfour-02/news_aggregator';" style="cursor: pointer;" class="service-content-box">
+                <h4 class="h4 service-item-title">National Air and Space Museum</h4>
+                <p class="service-item-text">One of my favourite trips to date.</p>
+              </div>
+            </li>
+      
+            <li class="service-item">
+              <div onclick="location.href='https://github.com/raghadasfour-02/email-unsubscriber';" style="cursor: pointer;" class="service-content-box">
+                <h4 class="h4 service-item-title">Camping @ Algonquin</h4>
+                <p class="service-item-text">Documenting my first backcountry camping trip (it was pretty awesome).</p>
+              </div>
+            </li>
+      
+            <li class="service-item"> 
+              <div onclick="location.href='https://github.com/raghadasfour-02/binary-keyboard';" style="cursor: pointer;" class="service-content-box">
+                <h4 class="h4 service-item-title">A Binary Keyboard</h4>
+                <p class="service-item-text">Interactive Keyboard that responds to input from the user's keyboard. Inspired by a meme about programmers.</p>
+              </div>
+            </li>
+      
+            <!-- New 5th item -->
+            <li class="service-item">
+              <div onclick="location.href='https://github.com/raghadasfour-02/GlobalTravelTracker';" style="cursor: pointer;" class="service-content-box">
+                <h4 class="h4 service-item-title">Global Travel Tracker</h4>
+                <p class="service-item-text">A web app that helps track countries visited and recommends future destinations.</p>
+              </div>
+            </li>
+      
+          </ul>
         </section>
-
+      
       </article>
-
-
+      
 
 
       <!--
@@ -529,7 +525,7 @@
                     <time datetime="2022-02-23">Nov 23, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Test Driven Developement: an intern's perspective</h3>
+                  <h3 class="h3 blog-item-title">Test Driven Development: an intern's perspective</h3>
 
                   <p class="blog-text">
                     What I learned from Kent Beck's TDD.
@@ -567,8 +563,6 @@
         </section>
 
       </article>
-
-
 
 
 

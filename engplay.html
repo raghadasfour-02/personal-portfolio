@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EngPlay</title>
+</head>
+<body>
+  <button onclick="goBack()">Back to Extracurriculars</button>
+  
+  <!-- EngPlay page content here -->
+
+  <script>
+    function goBack() {
+      window.location.href = 'index.html#extracurriculars';
+    }
+  </script>
+</body>
+</html>
+
+
+<script>
+    // Check if the URL contains #extracurriculars and open that tab if so
+    window.addEventListener('load', function() {
+        if (window.location.hash === '#extracurriculars') {
+            openTab('extracurriculars'); // Adjust to your tab-opening function
+        }
+    });
+
+    function openTab(tabName) {
+        // Example code for a function that opens a specific tab
+        const tabs = document.querySelectorAll('.tab-content'); // Adjust selector as needed
+        tabs.forEach(tab => tab.style.display = 'none');
+
+        const targetTab = document.querySelector(`.tab-content[data-tab="${tabName}"]`);
+        if (targetTab) targetTab.style.display = 'block';
+
+        // Also handle tab navigation if required
+        const navLinks = document.querySelectorAll('.tab-nav a');
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        const activeLink = document.querySelector(`.tab-nav a[data-tab="${tabName}"]`);
+        if (activeLink) activeLink.classList.add('active');
+    }
+</script>
