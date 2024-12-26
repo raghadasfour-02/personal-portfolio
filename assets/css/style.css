@@ -69,7 +69,7 @@
     --fs-5: 15px;
     --fs-6: 14px;
     --fs-7: 13px;
-    --fs-8: 11px;
+    --fs-8: 10px;
   
     /* font-weight */
     --fw-300: 300;
@@ -236,6 +236,22 @@
     left: 0;
     width: 30px;
     height: 3px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+  }
+
+  .small-article-title {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .small-article-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 2.5px;
     background: var(--text-gradient-yellow);
     border-radius: 3px;
   }
@@ -492,7 +508,6 @@
   .about-text p { margin-bottom: 15px; }
   
   
-  
   /**
    * #service 
    */
@@ -539,8 +554,45 @@
     font-weight: var(--fw-3);
     line-height: 1.6;
   }
-  
-  
+  .service-item-text-small {
+    color: var(--vegas-gold);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-3);
+    line-height: 2;
+  }
+
+  /* CSS for the boxes under extracurriculars */
+  .extra-service-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center-align each item */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Wider box style for the service item */
+.extra-service-item {
+  position: relative;
+  width: 100%; /* Full width within container */
+  max-width: 1200px; /* Optional max width to control size */
+  margin-bottom: 20px; /* Space between each item */
+  position: relative;
+  background: var(--border-gradient-onyx);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;
+}
+
+.extra-service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
   /**
    * #testimonials 
    */

@@ -142,3 +142,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 // Update tab when hash changes (e.g., user presses back button)
 window.addEventListener("hashchange", showPageFromHash);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultTab = "about";
+
+  // Check if the URL has a hash
+  if (!window.location.hash) {
+      // If no hash, set hash to default tab (about)
+      window.location.hash = defaultTab;
+  } else {
+      // If there is a hash, open the tab based on the hash
+      openTab(window.location.hash.substring(1));
+  }
+
+  function openTab(tabName) {
+      const tabs = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabs.length; i++) {
+          tabs[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+  }
+});
