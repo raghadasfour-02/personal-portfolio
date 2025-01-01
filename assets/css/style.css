@@ -1825,12 +1825,23 @@
   
     .social-list { justify-content: center; }
   
-  
-  
-    /**
-       * RESUME
-       */
-  
-    .timeline-text { max-width: 700px; }
-  
   }
+
+/* Styling images for Camping Page */
+.container {
+  display: flex;
+  justify-content: space-around; /* or space-between, center, etc. */
+  gap: 1rem;                    /* space between figures */
+  max-width: 400px;            /* optional max width for the container */
+  margin: 1em auto;            /* centers the container */
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5em;
+}
